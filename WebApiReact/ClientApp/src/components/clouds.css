@@ -1,0 +1,54 @@
+    #mainContent {
+      background-color: #A2BFCE;
+      border-radius: 4px;
+      padding: 10px;
+      width: 600px;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .cloud {
+      position: absolute;
+    }
+
+    #bigCloud {
+      animation: bobble 2s infinite;
+      margin-left: 100px;
+      margin-top: 15px;
+    }
+
+    #smallCloud {
+      animation: bobble 4s infinite;
+      margin-top: 65px;
+      margin-left: 200px;
+    }
+
+    @keyframes bobble {
+      0% {
+        transform: translateY(40px);
+        animation-timing-function:  ease-in;
+      }
+
+      50% {
+        transform: translateY(50px);
+        animation-timing-function:  ease-out;
+      }
+
+      100% {
+        transform: translateY(40px);
+      }
+    }
+
+    @keyframes wobble {
+      0% {
+        transform: translateX(20px);
+        animation-timing-function:  ease-in;
+      }
+      50% {
+        transform: translateX(70px);
+        animation-timing-function:  ease-out;
+      }
+      100% {
+        transform: translateX(20px);
+      }
+    }
