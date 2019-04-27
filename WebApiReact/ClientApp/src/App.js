@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { Clouds } from './components/Clouds';
+import { Swatch } from './components/Swatch';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,7 +15,7 @@ library.add(faSpinner, faCoffee)
 
 
     //< Route path = '/redux-counter' component = { ReduxCounter } />
-        //<Route path='/swatch' component={Swatch} />
+        
 
 export default class App extends Component {
   static displayName = App.name;
@@ -24,6 +25,7 @@ export default class App extends Component {
       <Layout>
         <Route exact path='/' component={Home} />
         <Route path='/clouds' component={Clouds} />
+        <Route path='/swatch' component={Swatch} />        
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data' component={FetchData} />
       </Layout>

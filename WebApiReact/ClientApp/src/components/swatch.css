@@ -1,0 +1,26 @@
+.swatchSquareStyle {
+      transition: background-color 0.3s ease-in;
+    }
+
+  .swatchWobble {
+    animation: wobble .2s 2; 
+  }
+
+    @keyframes wobble {
+
+      25% {
+        transform: translateX(10px);
+        animation-timing-function:  ease-in;
+      }
+      50% {
+        transform: translateX(0px);
+        animation-timing-function:  linear;
+      }
+      75% {
+        transform: translateX(-10px);
+        animation-timing-function:  ease-out;
+      }
+      100% {
+        transform: translateX(0px);
+      }            
+    }
